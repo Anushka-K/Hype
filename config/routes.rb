@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
+  root 'static_pages#about'
   get 'static_pages/home'
   get 'static_pages/signin'
-  root 'application#welcomeMessage'
+  get 'static_pages/addprops'
+  get 'static_pages/about'
+  
 end

@@ -4,4 +4,10 @@ class StaticPagesController < ApplicationController
 
   def signin
   end
+  
+  def addprops
+  end
+  
+  def about
+  end
 end
