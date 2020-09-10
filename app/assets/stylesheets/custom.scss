@@ -1,0 +1,14 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/*universal*/
+
+body {
+    padding-top: 80px;
+}
+
+/*typography*/
+
+h1,p {
+    text-align: center;
+}
