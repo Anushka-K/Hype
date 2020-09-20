@@ -3,11 +3,18 @@
 
 /*universal*/
 
-body {
-    padding-top: 80px;
+body{
+   
 }
 
 /*typography*/
+.jumbotron{
+    margin: 100px;
+    padding: 10%;
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  
+
+}
 
 h1,p {
     text-align: center;
