@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   root 'static_pages#about'
   get '/home', to: 'static_pages#home'
   get '/signin', to: 'static_pages#signin'
-  get '/addprops', to: 'static_pages#addprops'
-  get '/signup', to:'static_pages#signup'
+  get '/addprops', to: 'props#new'
+  get '/signup', to:'users#new'
   get '/manageprops', to: 'static_pages#manageprops'
-  
+  resources :props
 end
