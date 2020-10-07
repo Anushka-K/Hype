@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
+  get 'props/new'
+  get 'props/show'
   get 'users/new'
   root 'static_pages#about'
   get '/home', to: 'static_pages#home'
   get '/signin', to: 'static_pages#signin'
   get '/addprops', to: 'static_pages#addprops'
   get '/signup', to:'users#new'
-  get '/manageprops', to: 'static_pages#manageprops'
+  get '/manageprops', to: 'props#show'
   
 end
