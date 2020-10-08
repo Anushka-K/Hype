@@ -5,8 +5,11 @@ Rails.application.routes.draw do
   root 'static_pages#about'
   get '/home', to: 'static_pages#home'
   get '/signin', to: 'static_pages#signin'
+
   get '/addprops', to: 'static_pages#addprops'
   get '/signup', to:'users#new'
   get '/manageprops', to: 'props#show'
-  
+
+  resources :props
+
 end

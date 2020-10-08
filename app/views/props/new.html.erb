@@ -1,9 +1,7 @@
-<div class="form">
-<form >
-    <div class="form-group">
-    <label for="exampleFormControlTextarea1">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-   <button type="submit" class="btn btn-primary">Submit</button>
-  </form>
-  </div>
+
+<% provide(:title, 'Add a new Prop') %>
+<%= form_for(@prop) do |f| %>
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+    
+<% end %>

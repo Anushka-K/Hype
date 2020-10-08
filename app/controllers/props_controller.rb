@@ -8,4 +8,12 @@ class PropsController < ApplicationController
   # #   @props= Prop.where("user LIKE ?", "%"+params[:q]+"%")
   end
   
+  def create
+  end
+  
+  def index
+  end
+  
+
 end
+
