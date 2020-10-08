@@ -1,0 +1,8 @@
+<h1>All Props</h1>
+
+<%= button_to "Add new Prop", new_prop_path, method: :get %>
+<ul>
+    <% @props.each do |prop| %>
+        <li>"<%= prop.content %>", for <%= link_to prop.user.name, user_path(prop.user) %></li>
+    <%end%>
+</ul>

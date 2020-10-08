@@ -1,0 +1,10 @@
+<h1>Props for <%= @user.name %></h1>
+
+<%#= button_to "Add a new Prop". new_prop_path, method: :get%>
+
+<ul>
+    <%@user.props.each do |prop| %>
+        <li><%= prop.content %></li>
+    <% end %>
+</ul>
+
