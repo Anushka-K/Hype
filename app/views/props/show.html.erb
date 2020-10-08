@@ -1,2 +1,7 @@
- <p><%= @prop.content %></p>
-  <p><%= @prop.stars %></p>
+
+<%= form_with(url: "/search", method: "get") do %>
+  <%= label_tag(:q, "Search for User:") %>
+  <%= text_field_tag(:q) %>
+  <%= submit_tag("Search") %>
+<% end %>
+
