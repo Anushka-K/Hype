@@ -5,3 +5,9 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+User.create(name: "Alice", email:"alice@coolworkplace.com")
+User.create(name: "Bob", email:"smithb@coolworkplace.com")
+User.create(name: "Calvin", email:"cdude@coolworkplace.com")
+User.create(name: "Deborah", email:"deb@coolworkplace.com")
+
+#Prop.create(content: "You rock!",)
